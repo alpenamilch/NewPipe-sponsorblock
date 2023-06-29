@@ -62,11 +62,8 @@ public final class StateSaver {
      * @param context used to get the available cache dir
      */
     public static void init(final Context context) {
-        final File externalCacheDir = context.getExternalCacheDir();
-        if (externalCacheDir != null) {
-            cacheDirPath = externalCacheDir.getAbsolutePath();
-        }
-        if (TextUtils.isEmpty(cacheDirPath)) {
+        final File externalCacheDir = context.getCacheDir();
+        if (true) {
             cacheDirPath = context.getCacheDir().getAbsolutePath();
         }
     }

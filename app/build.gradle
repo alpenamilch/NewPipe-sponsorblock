@@ -34,20 +34,10 @@ android {
 
     buildTypes {
         debug {
-            debuggable true
+            debuggable false
 
-            // suffix the app id and the app name with git branch name
-            def workingBranch = getGitWorkingBranch()
-            def normalizedWorkingBranch = workingBranch.replaceFirst("^[^A-Za-z]+", "").replaceAll("[^0-9A-Za-z]+", "")
-            if (normalizedWorkingBranch.isEmpty() || workingBranch == "master" || workingBranch == "dev") {
-                // default values when branch name could not be determined or is master or dev
-                applicationIdSuffix ".debug"
-                resValue "string", "app_name", "NewPipe Debug"
-            } else {
-                applicationIdSuffix ".debug." + normalizedWorkingBranch
-                resValue "string", "app_name", "NewPipe " + workingBranch
-                archivesBaseName = 'NewPipe_' + normalizedWorkingBranch
-            }
+                applicationIdSuffix ".sbclean"
+                resValue "string", "app_name", "2NewPipe"
         }
 
         // Keep the release build type at the end of the list to override 'archivesBaseName' of
@@ -191,7 +181,7 @@ dependencies {
     // name and the commit hash with the commit hash of the (pushed) commit you want to test
     // This works thanks to JitPack: https://jitpack.io/
     implementation 'com.github.TeamNewPipe:nanojson:1d9e1aea9049fc9f85e68b43ba39fe7be1c1f751'
-    implementation 'com.github.TeamNewPipe:NewPipeExtractor:v0.22.6'
+    implementation 'com.github.alpenamilch:NewPipeExtractor:533121f'
     implementation 'com.github.TeamNewPipe:NoNonsense-FilePicker:5.0.0'
 
 /** Checkstyle **/
@@ -279,10 +269,6 @@ dependencies {
 
 /** Debugging **/
     // Memory leak detection
-    implementation "com.squareup.leakcanary:leakcanary-object-watcher-android:${leakCanaryVersion}"
-    implementation "com.squareup.leakcanary:plumber-android:${leakCanaryVersion}"
-    debugImplementation "com.squareup.leakcanary:leakcanary-android:${leakCanaryVersion}"
-    // Debug bridge for Android
     debugImplementation "com.facebook.stetho:stetho:${stethoVersion}"
     debugImplementation "com.facebook.stetho:stetho-okhttp3:${stethoVersion}"
 

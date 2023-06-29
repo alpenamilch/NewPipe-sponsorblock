@@ -50,7 +50,7 @@
         app:iconSpaceReserved="false" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="false"
+        android:defaultValue="true"
         android:key="@string/show_age_restricted_content"
         android:summary="@string/show_age_restricted_content_summary"
         android:title="@string/show_age_restricted_content_title"

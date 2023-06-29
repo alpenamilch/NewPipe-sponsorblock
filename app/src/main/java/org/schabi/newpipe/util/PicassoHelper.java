@@ -46,7 +46,7 @@ public final class PicassoHelper {
     public static void init(final Context context) {
         picassoCache = new LruCache(10 * 1024 * 1024);
         picassoDownloaderClient = new OkHttpClient.Builder()
-                .cache(new okhttp3.Cache(new File(context.getExternalCacheDir(), "picasso"),
+                .cache(new okhttp3.Cache(new File(context.getCacheDir(), "picasso"),
                         50 * 1024 * 1024))
                 // this should already be the default timeout in OkHttp3, but just to be sure...
                 .callTimeout(15, TimeUnit.SECONDS)

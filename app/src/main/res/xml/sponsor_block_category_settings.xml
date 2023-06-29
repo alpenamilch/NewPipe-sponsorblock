@@ -39,7 +39,7 @@
 
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/sponsor_block_category_intro_key"
             android:title="@string/settings_category_sponsor_block_category_enable_title"/>
 
@@ -63,7 +63,7 @@
 
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/sponsor_block_category_outro_key"
             android:title="@string/settings_category_sponsor_block_category_enable_title"/>
 
@@ -87,7 +87,7 @@
 
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/sponsor_block_category_interaction_key"
             android:title="@string/settings_category_sponsor_block_category_enable_title"/>
 
@@ -111,7 +111,7 @@
 
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/sponsor_block_category_self_promo_key"
             android:title="@string/settings_category_sponsor_block_category_enable_title"/>
 
@@ -135,7 +135,7 @@
 
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/sponsor_block_category_non_music_key"
             android:title="@string/settings_category_sponsor_block_category_enable_title"/>
 
@@ -159,7 +159,7 @@
 
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/sponsor_block_category_preview_key"
             android:title="@string/settings_category_sponsor_block_category_enable_title"/>
 
@@ -183,7 +183,7 @@
 
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/sponsor_block_category_filler_key"
             android:title="@string/settings_category_sponsor_block_category_enable_title"/>
 

@@ -234,8 +234,7 @@ public final class PlayerHelper {
     }
 
     public static boolean isBrightnessGestureEnabled(@NonNull final Context context) {
-        return getPreferences(context)
-                .getBoolean(context.getString(R.string.brightness_gesture_control_key), true);
+        return false;
     }
 
     public static boolean isStartMainPlayerFullscreenEnabled(@NonNull final Context context) {

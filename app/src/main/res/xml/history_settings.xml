@@ -5,7 +5,7 @@
     android:title="@string/settings_category_history_title">
 
     <SwitchPreferenceCompat
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:key="@string/enable_watch_history_key"
         android:summary="@string/enable_watch_history_summary"
         android:title="@string/enable_watch_history_title"
@@ -13,7 +13,7 @@
         app:iconSpaceReserved="false" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:dependency="@string/enable_watch_history_key"
         android:key="@string/enable_playback_resume_key"
         android:summary="@string/enable_playback_resume_summary"
@@ -22,7 +22,7 @@
         app:iconSpaceReserved="false" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:dependency="@string/enable_watch_history_key"
         android:key="@string/enable_playback_state_lists_key"
         android:summary="@string/enable_playback_state_lists_summary"
@@ -31,7 +31,7 @@
         app:iconSpaceReserved="false" />
 
     <SwitchPreferenceCompat
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:key="@string/enable_search_history_key"
         android:summary="@string/enable_search_history_summary"
         android:title="@string/enable_search_history_title"

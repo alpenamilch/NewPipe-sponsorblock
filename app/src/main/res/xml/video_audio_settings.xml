@@ -199,7 +199,7 @@
             app:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="@string/use_inexact_seek_key"
             android:summary="@string/use_inexact_seek_summary"
             android:title="@string/use_inexact_seek_title"

@@ -2,7 +2,7 @@
 
 
 #adb uninstall org.schabi.newpipe.clean
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 rm ./app/build -fr 
 ./gradlew assembleDebug 
 adb install ./app/build/outputs/apk/debug/app-debug.apk

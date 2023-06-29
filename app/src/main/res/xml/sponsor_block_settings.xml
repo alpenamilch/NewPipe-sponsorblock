@@ -35,7 +35,7 @@
 
         <SwitchPreference
             app:iconSpaceReserved="false"
-            android:defaultValue="true"
+            android:defaultValue="false"
             android:dependency="@string/sponsor_block_api_url_key"
             android:key="@string/sponsor_block_notifications_key"
             android:summary="@string/sponsor_block_notifications_summary"
